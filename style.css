@@ -1,0 +1,67 @@
+body{
+    background-color: #666666;
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+    
+    flex-direction: column;
+}
+
+h1{
+    color: white;
+    align-self: center;
+    margin-bottom: 5%;
+    font-size: 300%;
+}
+
+#greed{
+    display: grid;
+    aspect-ratio: 1/1;
+    width: 30%;
+    max-width: 500px;
+    align-self: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    padding: 5px;
+    
+
+}
+
+.square{
+    background-color: rgb(15, 15, 15);
+    height: 100%;
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 500%;
+    
+    transition: transform 0.2s;
+}
+
+.square:hover{
+    transform: scale(1.05)
+}
+
+#end{
+    visibility: hidden;
+    z-index: -10;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(78, 88, 76, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(191, 18, 214);
+    font-size: 400%;
+    font-weight: 900;
+
+    transition: visibility 0.3s;
+    
+}
